@@ -17,7 +17,7 @@ def getVersionName = { ->
 }
 
 def getApplicationId = { ->
-    def appId = project.hasProperty('applicationId') ? applicationId : 'com.explorersurgical.app.uat'
+    def appId = project.hasProperty('applicationId') ? applicationId : 'com.demo.application'
     println "ApplicationId is set to $appId"
     return appId
 }
