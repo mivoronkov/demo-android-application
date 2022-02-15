@@ -1,3 +1,8 @@
+
+plugins {
+    id 'com.android.application'
+}
+
 def getVersionCode = { ->
     def code = project.hasProperty('buildNumber') ? buildNumber.toInteger() : 1
     println "VersionCode is set to $code"
@@ -15,10 +20,6 @@ def getApplicationId = { ->
     def appId = project.hasProperty('applicationId') ? applicationId : 'com.explorersurgical.app.uat'
     println "ApplicationId is set to $appId"
     return appId
-}
-
-plugins {
-    id 'com.android.application'
 }
 
 android {
